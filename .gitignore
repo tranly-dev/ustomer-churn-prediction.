@@ -1,6 +1,14 @@
+# Ignore chung
 __pycache__/
-*.csv
-*.xlsx
-*.ipynb_checkpoints/
-data/raw/
-data/processed/
+*.ipynb_checkpoints
+
+# (nếu có) ignore csv toàn cục...
+# *.csv
+
+# Ignore mọi thứ trong data/raw...
+data/raw/*
+
+# ...nhưng cho phép các file cụ thể
+!data/raw/.gitkeep
+!data/raw/*.csv
+
